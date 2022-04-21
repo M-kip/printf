@@ -29,7 +29,7 @@ int _abs(int n)
 {
     if ( n < 0)
     {
-        return (n *= -n);
+        return (n *= -1);
     }
 
     return (n);
@@ -56,18 +56,22 @@ char *print_i(va_list list)
 
         return (0);
     }
+
+    /*
     if (n < -10 && n < 10 )
     {
         buffer[index++] = _abs(n) + '0';
         buffer[index] = '\0';
+        printf("buffer contents %s\n", buffer);
 
         return (buffer);
-    }
+    }*/
 
     if ((sign = n) < 0 )
     {
         n = _abs(n);
     }
+    printf("integer value after sign coversation %i\n", n);
     while (n)
     {
         buffer[index++] = n % 10 + '0';
@@ -78,6 +82,7 @@ char *print_i(va_list list)
         buffer[index++] = '-';  
     }
     buffer[index] = '\0';
+    printf("buffer contents %s\n", buffer);
     reverse_str(buffer);
 
     return (buffer);
