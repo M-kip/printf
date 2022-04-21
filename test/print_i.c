@@ -29,7 +29,7 @@ int _abs(int n)
 {
     if ( n < 0)
     {
-        return (n *= -n);
+        return (n *= -1);
     }
 
     return (n);
@@ -71,7 +71,7 @@ char *print_i(va_list list)
     {
         n = _abs(n);
     }
-    printf("integer value before sign coversation %i\n", n);
+    printf("integer value after sign coversation %i\n", n);
     while (n)
     {
         buffer[index++] = n % 10 + '0';
