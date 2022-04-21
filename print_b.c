@@ -10,16 +10,16 @@
 char *reverse_str(char *s)
 {
     char temp;
-    int x, y, i;
+    int x, i; /* y */
 
     x = _strlen(s) - 1;
-    y = _strlen(s) / 2;
+    /*y = _strlen(s) / 2;*/
 
     if (s == NULL)
     {
         return (0);
     }
-    for (i = 0; i <= y; i++, x--)
+    for (i = 0; i <= x; i++, x--)
     {
         temp = s[i];
 
