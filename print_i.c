@@ -56,17 +56,6 @@ char *print_i(va_list list)
 
         return (0);
     }
-
-    /*
-    if (n < -10 && n < 10 )
-    {
-        buffer[index++] = _abs(n) + '0';
-        buffer[index] = '\0';
-        printf("buffer contents %s\n", buffer);
-
-        return (buffer);
-    }*/
-
     if ((sign = n) < 0 )
     {
         n = _abs(n);
