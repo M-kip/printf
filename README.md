@@ -36,16 +36,16 @@ git clone https://github.com/M-kip/printf.git
 | rot13.c | encrypts a string using rot13 method |
 
 ### format capabilities
-Character: %c
-Strings: %s
-Signed integers: %d
-Signed decimal intergers: %i
-Unsigned integers: %u
-Hex (lower and upper): %x and %X
-Octal: %o
-Binary: %b
-ROT13: %R
-Reverse String: %r
+1. Character: %c
+2. Strings: %s
+3. Signed integers: %d
+4. Signed decimal intergers: %i
+5. Unsigned integers: %u
+5. Hex (lower and upper): %x and %X
+6. Octal: %o
+7. Binary: %b
+8. ROT13: %R
+9. Reverse String: %r
 
 ### Running Examples
 The test folder has the **main.c** for proof of concept

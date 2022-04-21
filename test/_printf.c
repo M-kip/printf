@@ -12,8 +12,9 @@ int _printf(const char *format, ...)
     char *buf;
     int i;
     int j;
+    int k;
     char *s;
-    size_t b_len = 0;
+    int b_len = 0;
     va_list list;
     struct print_flags flags[] = {
         {"c", print_c},
@@ -22,8 +23,8 @@ int _printf(const char *format, ...)
         {"d", print_i},
         {"b", print_b},
         {"u", print_u},
-        {"x", print_hex},
-        {"X", print_hex_low},
+        {"X", print_hex},
+        {"x", print_hex_low},
         {"o", print_oct},
         {"R", rot13},
         {NULL, NULL},
@@ -37,7 +38,10 @@ int _printf(const char *format, ...)
         perror("unable to create buffer");
         return (-1);
     }
-
+    for(k = 0 ; k <= 1024; k++)
+    {
+        buf[k] = '\0';
+    }
     va_start(list, format);
 
     if (format == NULL)
@@ -74,8 +78,7 @@ int _printf(const char *format, ...)
             }
             if (flags[j].f == NULL)
             {
-                buf[b_len] = format[i];
-                b_len++;
+                buf[b_len++] = format[i];
             }
         }
         else

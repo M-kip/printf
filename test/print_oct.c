@@ -23,20 +23,18 @@ char *print_oct(va_list list)
     {
         buffer[index++] = '0';
         buffer[index] = '\0';
-
+        /*printf("erroneous return\n");*/
         return (buffer);
     }
 
     while (n)
     {
-        buffer[index++] = n % 8 + '0';
+        buffer[index++] = ((n % 8) + '0');
         n /= 8;
     }
 
     buffer[index] = '\0';
-
     reverse_str(buffer);
-
     return (buffer);
     
 }

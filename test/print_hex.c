@@ -36,7 +36,7 @@ char *print_hex(va_list list)
         }
         else
         {
-            buffer[index++] = n % 16 + 'A';
+            buffer[index++] = n % 16 + 55;
         }
         n /= 16;
     }
