@@ -32,5 +32,7 @@ char *print_u(va_list list);
 char *print_hex(va_list list);
 char *print_hex_low(va_list list);
 char *print_oct(va_list list);
-
+char *create_buffer(int size);
+int print_helper(const char *format, char *buf, flags_t *flags, va_list list);
+int _abs(int n);
 #endif
