@@ -4,15 +4,14 @@
  * _strlen - return length of a string
  * @s: String pointer
  *
- * Returns: lenght of s
+ * Return: lenght of s
  */
 size_t _strlen(const char *s)
 {
-    const char *p = s;
-    while(*s)
-    {
-        s++;
-    }
-    
-    return (s - p);
+	const char *p = s;
+
+	while (*s)
+		s++;
+
+	return (s - p);
 }
