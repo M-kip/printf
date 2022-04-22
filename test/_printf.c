@@ -77,7 +77,7 @@ int print_helper(const char *format, char *buf, flags_t *flags, va_list list)
 	write(1, buf, b_len);
 	free(buf);
 
-	return (b_len - 1);
+	return (b_len);
 }
 /**
  * _printf - Custom printf
