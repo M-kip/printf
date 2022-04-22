@@ -15,6 +15,7 @@ struct print_flags
     char *c;
     char *(*f)(va_list list);
 };
+typedef struct print_flags flags_t;
 int _printf(const char *format, ...);
 int ret_position(const char *s, int i);
 char *_strcat(char *dest, char *src, int n);
