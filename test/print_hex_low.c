@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * print_hex_low hexadecimal from an integer
+ * print_hex_low - hexadecimal from an integer
  * @list: va_list list
  *
- * Takes an integer and return a hexadecimal string
- * returns a string pointer
+ * Description: Takes an integer and return a hexadecimal string
+ * Return: a string pointer
  */
 char *print_hex_low(va_list list)
 {

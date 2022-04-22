@@ -12,6 +12,7 @@
 char *create_buffer(int size)
 {
 	int k;
+
 	char *buf = malloc(size * sizeof(char));
 
 	if (buf == NULL)

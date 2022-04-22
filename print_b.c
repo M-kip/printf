@@ -6,7 +6,7 @@
  *
  * Description: Reverse a string
  *
- * Returns: str pointer
+ * Return: str pointer
  */
 char *reverse_str(char *s)
 {
@@ -33,8 +33,8 @@ char *reverse_str(char *s)
  * print_b - print binary
  * @list: va_list variable
  *
- * convert integer to it's binary rep
- * return pointer to a binary string
+ * Description: convert integer to it's binary rep
+ * Return: pointer to a binary string
  */
 char *print_b(va_list list)
 {

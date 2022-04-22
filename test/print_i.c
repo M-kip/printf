@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * numlen find the lenght of a number
+ * numlen -  find the lenght of a number
  * @n: int number
  *
- * Finds the lenght of a number
- * Return the lenght of a number
+ * Description: Finds the lenght of a number
+ * Return: the lenght of a number
  */
 int numlen(int n)
 {
@@ -20,11 +20,11 @@ int numlen(int n)
 }
 
 /**
- * _abs absolute of a number
+ * _abs -  absolute of a number
  * @n: int number
  *
- * find the absolute value of a number
- * Return absolute of a number
+ * Description: find the absolute value of a number
+ * Return: absolute of a number
  */
 int _abs(int n)
 {
@@ -37,11 +37,11 @@ int _abs(int n)
 }
 
 /**
- * print_i prints integer
+ * print_i -  prints integer
  * @list: list va_list
  *
- * converts integer to string
- * return a string integer
+ * Description:converts integer to string
+ * Return: a string integer
  */
 char *print_i(va_list list)
 {

@@ -10,19 +10,17 @@
  */
 char *_strcat(char *dest, char *src, int n)
 {
-    int i = 0;
-    char *p = dest;
+	int i = 0;
+	char *p = dest;
 
-    while (*p)
-    {
-        p++;
-    }
-    while (i <= n)
-    {
-        *p++ = *src++;
-        i++;
-    }
-    *p = '\0';
+	while (*p)
+		p++;
+	while (i <= n)
+	{
+		*p++ = *src++;
+		i++;
+	}
+	*p = '\0';
 
-    return (p);
+	return (p);
 }

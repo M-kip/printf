@@ -1,10 +1,11 @@
 #include "main.h"
 /**
- * print_u print unsigned number
+ * print_u -  print unsigned number
  * @list: va_list list
  *
- * convert an integer to a string rep
- * returns a string pointer
+ * Description: convert an integer to a string rep
+ *
+ * Return: a string pointer
  */
 
 char *print_u(va_list list)

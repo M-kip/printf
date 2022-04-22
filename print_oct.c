@@ -3,7 +3,7 @@
  * print_oct - convert an oct from decimal
  * @list: va_list list
  *
- * return string pointer
+ * Return: string pointer
  */
 
 char *print_oct(va_list list)

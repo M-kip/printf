@@ -1,25 +1,22 @@
 #include "main.h"
 
 /**
- * ret_postion - return position after white space
- *
+ * ret_position - return position after white space
  * @s: string pointer
- * @i: integer sentinel
+ * @n: integer sentinel
  *
- * Return: index 
+ * Return: index
  */
 int ret_position(const char *s, int n)
 {
-    int i = 0;
+	int i = 0;
 
-    while(*s)
-    {
-        if (s[n + 1] != ' ')
-        {
-            return (i);
-        }
-        i++;
-        n++;
-    }
-    return (i);
+	while (*s)
+	{
+		if (s[n + 1] != ' ')
+			return (i);
+		i++;
+		n++;
+	}
+	return (i);
 }
